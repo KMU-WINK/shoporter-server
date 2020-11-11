@@ -1,5 +1,6 @@
 from selenium import webdriver
 from account_information import id, password
+import time
 
 
 driver = webdriver.Chrome('/chromedriver')
@@ -12,7 +13,10 @@ driver.execute_script(script_injection)
 
 # 심사 안내 팝업 종료
 driver.find_element_by_xpath('/html/body/div[1]/div/div/div[3]/div[1]/button').click()
+time.sleep(1)
 # 고객센터 전화번호 인증 안내
 driver.find_element_by_xpath('/html/body/div[1]/div/div/div[3]/div/div/button').click()
+time.sleep(1)
 # 종료 확인 팝업
 driver.find_element_by_xpath('/html/body/div[1]/div/div/div[2]/div/span[2]/button').click()
+time.sleep(1)
