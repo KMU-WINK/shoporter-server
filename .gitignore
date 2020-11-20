@@ -1,4 +1,12 @@
-### Python ###
+/venv/
+/account_information.py
+
+### Flask ###
+instance/*
+!instance/.gitignore
+.webassets-cache
+
+### Flask.Python Stack ###
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -65,7 +73,6 @@ db.sqlite3-journal
 
 # Flask stuff:
 instance/
-.webassets-cache
 
 # Scrapy stuff:
 .scrapy
@@ -137,6 +144,4 @@ dmypy.json
 
 # profiling data
 .prof
-/workspace.xml
 
-# End of https://www.toptal.com/developers/gitignore/api/python

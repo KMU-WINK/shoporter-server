@@ -3,7 +3,7 @@ from account_information import id, password
 import time
 
 
-driver = webdriver.Chrome('/chromedriver')
+driver = webdriver.Chrome('./chromedriver')
 driver.implicitly_wait(3)
 
 driver.get("https://sell.smartstore.naver.com/#/login")
@@ -26,3 +26,4 @@ time.sleep(1)
 payment = driver.find_element_by_xpath('//*[@id="__app_root__"]/div/div[2]/div[3]/div[1]/h3/b')
 print(payment.text)
 
+driver.close()
