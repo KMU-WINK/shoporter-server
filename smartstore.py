@@ -1,5 +1,6 @@
 from selenium import webdriver
 from account_information import id, password
+import time
 
 
 driver = webdriver.Chrome('/chromedriver')
@@ -24,3 +25,4 @@ time.sleep(1)
 # 하단 목록의 금일 결제 총 개수 데이터 저장 후 출력
 payment = driver.find_element_by_xpath('//*[@id="__app_root__"]/div/div[2]/div[3]/div[1]/h3/b')
 print(payment.text)
+
